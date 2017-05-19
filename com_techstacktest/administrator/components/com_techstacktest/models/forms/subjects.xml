@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+   <fieldset>
+
+        <field name="id" type="text" default="0" readonly="true" class="readonly" /> 
+        
+       <field name="subject_name" type="text" default="" required="true" 
+            label="COM_TEACHPRO_FORM_SUBJECT_FIELD_NAME_LABEL"
+            description="COM_TEACHPRO_FORM_SUBJECT_FIELD_NAME_DESC"  /> 
+       
+       
+       <field name="grade"
+			type="list"
+			label="COM_TEACHPRO_FORM_GOAL_FIELD_GRADE_LABEL"
+			description="COM_TEACHPRO_FORM_GOAL_FIELD_GRADE_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option value="">COM_TEACHPRO_FORM_SUBJECT_FIELD_GRADE_DEFAULT_VALUE</option>
+                        <option value="1" >1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                        <option value="4" >4</option>
+                             <option value="5" >5</option>
+                        <option value="6" >6</option>
+                        <option value="7" >7</option>
+                        <option value="8" >8</option>
+                        <option value="9" >9</option>
+                            <option value="10" >10</option>
+                        <option value="11" >11</option>
+                        <option value="12" >12</option>
+                        <option value="k" >K</option>
+                </field>
+       
+       <field name="remarks" type="textarea" default="default" label="COM_TEACHPRO_FORM_SUBJECT_FIELD_REMARKS_LABEL" description="COM_TEACHPRO_FORM_SUBJECT_FIELD_REMARKS_DESC" rows="10" cols="5" />
+        
+       
+       <field name="ordering" type="text" default="" 
+            label="COM_TEACHPRO_FORM_SUBJECT_FIELD_ORDERING_LABEL"
+            description="COM_TEACHPRO_FORM_SUBJECT_FIELD_ORDERING_DESC"  /> 
+
+       
+        <field name="state" type="text" default=""   /> 
+        
+        
+       
+       <field name="created_by" type="createdby" default="" 
+            label="COM_TEACHPRO_FORM_SUBJECT_FIELD_CREATED_BY_LABEL"
+            description="COM_TEACHPRO_FORM_SUBJECT_FIELD_CREATED_BY_DESC"  /> 
+       
+
+       <field name="modified_by" type="modifiedby" default="" 
+            label="COM_TEACHPRO_FORM_SUBJECT_FIELD_MODIFIED_BY_LABEL"
+            description="COM_TEACHPRO_FORM_SUBJECT_FIELD_MODIFIED_BY_DESC"  /> 
+       
+       
+        <field name="checked_out" type="hidden" filter="unset" />
+        
+        
+        <field name="checked_out_time" type="hidden" filter="unset" />
+       
+   </fieldset>
+</form>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+            
+            
+           <field name="id" type="text" default="0" label=""
+            readonly="true" class="readonly"
+            /> 
+            
+          
+            
+           
+            <field name="correct" type="radio" default="0" label="COM_TEACHPRO_FORM_ANSWER_FIELD_CORRECT" description="COM_TEACHPRO_FORM_ANSWER_FIELD_DESC_CORRECT" required="true">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field> 
+           
+            <field name="name" label="COM_TEACHPRO_FORM_ANSWER_FIELD_NAME" description="COM_TEACHPRO_FORM_ANSWER_FIELD_DESC_NAME" type="text"    required="true" />
+           
+          
+           <field name="questionid" type="hidden" default=""   /> 
+                  
+           <field name="ordering" type="hidden" default=""   /> 
+
+           
+            <field name="state" type="hidden" default="0" /> 
+
+            <field name="created_by" type="createdby" default="" 
+                      /> 
+
+            <field name="modified_by" type="modifiedby" default="" 
+                    /> 
+
+            <field name="checked_out" type="hidden" filter="unset" />
+
+            <field name="checked_out_time" type="hidden" filter="unset" />
+                
+        </fieldset>
+        
+</form>
+
+

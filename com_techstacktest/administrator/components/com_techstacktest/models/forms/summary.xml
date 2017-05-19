@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset>
+        <field name="summ_desc" type="text" class="inputbox" size="40" label="Summary Description" description=""  />
+        <field name="summ_text" type="textarea" class="inputbox" rows="5" cols="30" label="Summary Text" description="" /> 
+    </fieldset>
+</form>

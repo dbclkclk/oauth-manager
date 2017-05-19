@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+            <field name="id" type="text" default="null" label="COM_TEACHPRO_FORM_LBL_STUDENTS_ID" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC" /> 
+
+  
+             <field name="teacher_id" type="hidden" default="" required="true" />
+             
+             
+             <field name="subject_id" type="sql" default="10" label="Select Subject" query="SELECT id AS value, subject_name as title FROM #__teachpro_subject" />
+      
+             <field name="start_date" type="text" required="true" label="Start Date" description="" />
+             
+             
+              <field name="end_date" type="text" required="true" label="Start Date" description="" />
+             
+	</fieldset>
+</form>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                    type="customhidden"
+                    addfieldpath="/administrator/components/com_teachpro/models/fields"
+                    name="teacherstartdate"
+                    readonly="true"
+                    required="true"
+                    label="Start date of tutoring"
+                    description="start tutoring date"
+                    databind="value:$parent.evaluateDate(startDate), attr:{ name:'jform[timesheet][&apos;+$index()+&apos;][teacherstartdate]'}"
+                    
+        />
+                 
+        <field
+                    type="customhidden"
+                    addfieldpath="/administrator/components/com_teachpro/models/fields"
+                    name="teacherenddate"
+                    label="end date of tutoring"
+                    readonly="true"
+                     required="true"
+                    description="end tutoring date"
+                     databind="value:$parent.evaluateDate(endDate),  attr:{ name:'jform[timesheet][&apos;+$index()+&apos;][teacherenddate]'}"
+                   
+        />
+    </fieldset>
+    
+</form>

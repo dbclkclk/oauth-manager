@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_TEACHPRO_TITLE_LIST_VIEW_STUDENTSS" option="View">
+        <message>
+                        <![CDATA[COM_TEACHPRO_TITLE_LIST_VIEW_STUDENTSS_DESC]]>
+        </message>
+	</layout>
+</metadata>

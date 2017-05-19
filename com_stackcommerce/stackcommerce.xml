@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_stackcommerce</name>
+    <creationDate>2017-01-09</creationDate>
+    <copyright>2017 Techstack Solutions Ltd. </copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Dean Clarke</author>
+    <authorEmail>deanclarke811@yahoo.com</authorEmail>
+    <authorUrl>http://techstacksolutions.com</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>Intelligence integrated in an E-Commerce Solution</description>  
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>
+        </sql>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <files folder="site/components/com_stackcommerce">
+        <filename>index.html</filename>
+        <filename>stackcommerce.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <media destination="com_stackcommerce" folder="media/com_stackcommerce">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <languages folder="site/language">
+	<language tag="en-GB">en-GB/en-GB.com_stackcommerce.ini</language>
+    </languages>
+    <administration>
+        <!-- Menu 1 -->
+        <menu img="media/com_stackcommerce/images/s_com_stackcommerce_inventory.png">COM_STACKCOMMERCE</menu>
+        	<submenu>
+                    <menu link="option=com_stackcommerce&amp;view=products" view="products" img="media/com_stackcommerce/images/s_products.png" alt="Stackcommerce/Products">COM_STACKCOMMERCE_PRODUCT_MANAGEMENT</menu>
+            
+                    <menu link="option=com_stackcommerce&amp;view=payment" view="payments" img="media/com_stackcommerce/images/s_payment_gateway.png" alt="Stackcommerce/Payment_Gateway">COM_STACKCOMMERCE_PAYMENT_GATEWAY_MANAGEMENT</menu>
+            
+                    <menu link="option=com_stackcommerce&amp;view=taxes" view="taxes" img="media/com_stackcommerce/images/s_tax.png" alt="Stackcommerce/Taxes">COM_STACKCOMMERCE_TAX_MANAGEMENT</menu>
+       
+                    <!-- Menu 2 -->
+                    <menu img="media/com_stackcommerce/images/s_com_stackcommerce_query.png">COM_STACKCOMMERCE_QUERY_MANAGEMENT</menu>
+                    <submenu>
+                        <menu link="option=com_stackcommerce&amp;view=queries" view="queries" img="media/com_stackcommerce/images/s_queries.png" alt="Stackcommerce/Queries">COM_STACKCOMMERCE_RELATED_QUERIES</menu>
+                
+                        <menu link="option=com_stackcommerce&amp;view=corrections" view="corrections" img="media/com_stackcommerce/images/s_spell_corrections.png" alt="Stackcommerce/Spell_Corrections">COM_STACKCOMMERCE_SPELL_CORRECTION</menu>
+                
+                        <menu link="option=com_stackcommerce&amp;view=navigations" view="navigations" img="media/com_stackcommerce/images/s_navigation.png" alt="Stackcommerce/Navigations">COM_STACKCOMMERCE_DYNAMIC_NAVIGATION</menu>
+                    </submenu>
+                    <!-- Menu 3 -->
+                    <menu img="media/com_stackcommerce/images/s_com_stackcommerce_analytic.png" link="option=com_stackcommerce&amp;view=analytics" view="analytics" alt="Stackcommerce/Analytics">COM_STACKCOMMERCE_ANALYTIC_MANAGEMENT</menu>
+
+                    <!-- Menu 4 -->
+                    <menu img="media/com_stackcommerce/images/s_com_stackcommerce_api.png" link="option=com_stackcommerce&amp;view=apis" view="apis"  alt="Stackcommerce/Apis">COM_STACKCOMMERCE_API_MANAGEMENT</menu>
+                </submenu>
+        <files folder="administrator/components/com_stackcommerce">
+            <filename>access.xml</filename>
+	    <filename>stackcommerce.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>stackcommerce.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator/language">    
+		<language tag="en-GB">en-GB/en-GB.com_stackcommerce.ini</language>
+		<language tag="en-GB">en-GB/en-GB.com_stackcommerce.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+        <plugin group="search" plugin="stackcommerce"/>
+    </plugins>
+    
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.component-creator.com/ -->
