@@ -35,6 +35,7 @@
         <filename>router.php</filename>
         <folder>views</folder>
         <folder>models</folder>
+        <folder>services</folder>
         <folder>controllers</folder>
         <folder>helpers</folder>
     </files>
@@ -63,6 +64,7 @@
             <folder>models</folder>
             <folder>sql</folder>
             <folder>tables</folder>
+            <folder>services</folder>
             <folder>views</folder>
         </files>
         <languages folder="languages/administrator">
