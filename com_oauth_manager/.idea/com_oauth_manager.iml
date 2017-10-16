@@ -15,5 +15,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="techstack" />
+    <orderEntry type="module" module-name="flux-redux" />
   </component>
 </module>

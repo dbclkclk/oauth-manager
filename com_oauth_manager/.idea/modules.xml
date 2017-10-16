@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/com_oauth_manager.iml" filepath="$PROJECT_DIR$/.idea/com_oauth_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../test/flux-redux/.idea/flux-redux.iml" filepath="$PROJECT_DIR$/../../test/flux-redux/.idea/flux-redux.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../www/techstack/.idea/techstack.iml" filepath="$PROJECT_DIR$/../../www/techstack/.idea/techstack.iml" />
     </modules>
   </component>
