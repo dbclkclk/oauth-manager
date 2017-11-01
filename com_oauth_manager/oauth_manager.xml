@@ -47,12 +47,7 @@
 			<language tag="en-GB">en-GB/en-GB.com_oauth_manager.ini</language>
     </languages>
     <administration>
-        <menu img="media/com_oauth_manager/images/s_com_oauth_manager.png" >COM_OAUTH_MANAGER</menu>
-        <submenu>
-            
-			<menu link="option=com_oauth_manager&amp;view=oauthservers" view="oauthservers" img="media/com_oauth_manager/images/s_oauthservers.png" alt="Oauth_manager/Oauthservers">COM_OAUTH_MANAGER_TITLE_OAUTHSERVERS</menu>
-
-        </submenu>
+        <menu img="media/com_oauth_manager/images/s_com_oauth_manager.png" link="option=com_oauth_manager" view="oauthservices">COM_OAUTH_MANAGER</menu>
         <files folder="administrator">
             <filename>access.xml</filename>
             <filename>config.xml</filename>

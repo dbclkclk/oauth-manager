@@ -36,8 +36,6 @@ class Oauth_managerViewOauthservices extends JViewLegacy
 	 */
 	public function display($tpl = null)
 	{
-		
-			JToolBarHelper::title(JText::_('COM_OAUTH_MANAGER'), 'oauthservices.png');
             parent::display($tpl);
 	}
 }

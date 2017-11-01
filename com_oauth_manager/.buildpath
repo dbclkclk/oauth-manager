@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildpath>
-	<buildpathentry kind="src" path="administrator/components/com_oauth_manager"/>
-	<buildpathentry kind="src" path="site/components/com_oauth_manager"/>
+	<buildpathentry external="true" kind="lib" path="/Users/deanclarke/vagrant/techstack-vagrant/www/tstack"/>
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+	<buildpathentry kind="src" path=""/>
 </buildpath>

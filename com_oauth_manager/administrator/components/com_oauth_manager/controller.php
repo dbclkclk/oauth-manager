@@ -29,7 +29,7 @@ class Oauth_managerController extends JControllerLegacy
 	 */
 	public function display($cachable = false, $urlparams = false)
 	{
-		$view = JFactory::getApplication()->input->getCmd('view', 'oauthservers');
+		$view = JFactory::getApplication()->input->getCmd('view', 'oauthservices');
 		JFactory::getApplication()->input->set('view', $view);
 
 		parent::display($cachable, $urlparams);

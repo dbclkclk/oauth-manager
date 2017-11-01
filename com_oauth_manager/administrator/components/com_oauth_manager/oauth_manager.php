@@ -15,10 +15,8 @@ if (!JFactory::getUser()->authorise('core.manage', 'com_oauth_manager'))
 {
 	throw new Exception(JText::_('JERROR_ALERTNOAUTHOR'));
 }
-
 require_once JPATH_COMPONENT_ADMINISTRATOR."/library/vendor/autoload.php";
-//
-//// Include dependancies
+// Include dependancies
 jimport('joomla.application.component.controller');
 //
 JLoader::registerPrefix('Oauth_manager', JPATH_COMPONENT_ADMINISTRATOR);
