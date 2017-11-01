@@ -1,7 +1,0 @@
-{
-    "name": "root/com_techstacktest",
-    "require": {
-        "tcdent/php-restclient": "^0.1.5",
-        "league/oauth2-client": "^2.2"
-    }
-}

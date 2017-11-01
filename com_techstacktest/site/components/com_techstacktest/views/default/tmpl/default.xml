@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<metadata>
-    <layout title="COM_TEACHPRO_TITLE_MANAGEMENT_VIEW_DEFAULT_TITLE" option="View">
-        <message>
-             COM_TEACHPRO_TITLE_MANAGEMENT_VIEW_DEFAULT_DESC
-        </message>
-    </layout>
-</metadata>
