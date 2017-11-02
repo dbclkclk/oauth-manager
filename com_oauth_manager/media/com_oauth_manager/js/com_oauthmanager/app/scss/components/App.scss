@@ -2,6 +2,6 @@
 @import '../base/base';
 @import "../neat/neat";
 
-.default-neat-grid {
+.defaultgrid {
  	@include grid-container;
 }

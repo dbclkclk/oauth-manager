@@ -12,10 +12,11 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: 'css-loader!sass-loader?modules,localIdentName="[name]-[local]-[hash:base64:6]"'
-                }),
+                loaders: [
+                    'style-loader',
+                    'css-loader?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+                    'sass-loader'
+                  ]
             }
            
         ]
@@ -28,11 +29,5 @@ module.exports = {
     watchOptions: {
         aggregateTimeout: 300,
         poll: 200
-    },
-    plugins: [
-    	new ExtractTextPlugin({
-    		  filename: 'app.css',
-    		  allChunks: true
-    		})
-    ]
+    }
 };
