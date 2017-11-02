@@ -3,9 +3,15 @@ var CSSModules = require('react-css-modules');
 var ReactRouter = require('react-router-dom');
 var Router = ReactRouter.BrowserRouter;
 var Route = ReactRouter.Route;
-import styles from '../../../../sass/layout/_layout.scss';
 var Index = require('../pages/Index');
 var SideBar = require('../component/SideBar');
+var styles = require('../scss/components/App.scss');
+
+
+console.log(React);
+console.log(CSSModules);
+console.log(ReactRouter);
+console.log(Router);
 
 class App extends React.Component {
 
@@ -24,5 +30,4 @@ class App extends React.Component {
         );
     };
 }
-
 export default CSSModules(App, styles);

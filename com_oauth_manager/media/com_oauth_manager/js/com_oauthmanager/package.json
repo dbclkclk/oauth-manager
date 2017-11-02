@@ -23,7 +23,6 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "babel-plugin-react-css-modules": "^3.3.2",
     "bootstrap": "^3.3.7",
     "css-modulesify": "^0.28.0",
     "react": "^15.6.1",

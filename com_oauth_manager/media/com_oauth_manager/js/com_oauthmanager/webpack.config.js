@@ -2,6 +2,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry : __dirname + '/app/index.js',
+    devtool: 'eval-source-map',
     module : {
     	loaders: [
             {
@@ -11,12 +12,10 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loaders: [
-                	'style-loader',
-                    'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-                    'resolve-url-loader',
-                    'sass-loader'
-                ]
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader!sass-loader?modules,localIdentName="[name]-[local]-[hash:base64:6]"'
+                }),
             }
            
         ]
